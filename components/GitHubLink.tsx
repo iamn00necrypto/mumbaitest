@@ -1,8 +1,9 @@
 import styles from "../../styles/Thirdweb.module.css";
 import React from "react";
+import Image from "next/image";
 
 export default function ThirdwebGuideFooter() {
-  const url = "https://github.com/thirdweb-example/custom-minting-page";
+  const url = "https://twitter.com/thirdweb?s=20";
   return (
     <>
       <div
@@ -28,14 +29,13 @@ export default function ThirdwebGuideFooter() {
           right: 18,
         }}
       >
-        <img
+        <Image
           src={"/github.png"}
           width={40}
           height={40}
           role="button"
           style={{ cursor: "pointer" }}
-          onClick={() => window.open(url, "_blank")}
-        />
+          onClick={() => window.open(url, "_blank")} alt={""}        />
       </div>
     </>
   );
